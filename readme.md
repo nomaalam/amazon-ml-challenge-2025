@@ -44,18 +44,22 @@ The challenge requires predicting product price (`price`) using complex multimod
 *The architecture consists of three input streams (Text, Image, Tabular) that process features independently and then concatenate them before a final Multi-Layer Perceptron (MLP) regression head predicts the target price (in log space).*
 
 
+
 #### Model Architecture Flowchart
 
 ```mermaid
 graph TD
 A[Text Input] --> B[DistilBERT Encoder] --> C[Text Embedding]
+
 D[Image Input] --> E[ViT Encoder] --> F[Image Embedding]
+
 G[IPQ Input] --> H[IPQ Feature (Scalar)]
+
 C --> I[Concatenation]
 F --> I
 H --> I
-I --> J[MLP Regression Head] --> K[Log Price Prediction]
 
+I --> J[MLP Regression Head] --> K[Log Price Prediction]
 ```
 
 ### 3.2 Model Components
