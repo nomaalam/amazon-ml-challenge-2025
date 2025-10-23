@@ -1,4 +1,4 @@
-# ML Challenge 2025: Smart Product Pricing Solution Template
+# ML Challenge 2025: Smart Product Pricing Solution
 
 **Team Name:** mlchamps  
 **Team Members:** Anchal Nagwanshi, Noma, Utkarsh Chauhan  
@@ -97,12 +97,7 @@ The model was trained for 7 epochs with early stopping patience of 3 epochs, usi
 ## Appendix
 
 ### A. Code artefacts
-*Include drive link for your complete code directory*
+https://github.com/nomaalam/amazon-ml-challenge-2025/
 
-
-### B. Additional Results
-*Include any additional charts, graphs, or detailed results*
 
 ---
-
-**Note:** This is a suggested template structure. Teams can modify and adapt the sections according to their specific solution approach while maintaining clarity and technical depth. Focus on highlighting the most important aspects of your solution.
