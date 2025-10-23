@@ -47,21 +47,23 @@ The challenge requires predicting product price (`price`) using complex multimod
 
 #### Model Architecture Flowchart
 
+```mermaid
 graph TD
-A[Text Input] --> B[DistilBERT Encoder] 
-B --> C[Text Embedding]
+    A[Text Input] --> B[DistilBERT Encoder]
+    B --> C[Text Embedding]
 
-D[Image Input] --> E[ViT Encoder] 
-E --> F[Image Embedding]
+    D[Image Input] --> E[ViT Encoder]
+    E --> F[Image Embedding]
 
-G[IPQ Input] --> H[IPQ Feature (Scalar)]
+    G[IPQ Input] --> H[IPQ Feature (Scalar)]
 
-C --> I[Concatenation]
-F --> I
-H --> I
+    C --> I[Concatenation]
+    F --> I
+    H --> I
 
-I --> J[MLP Regression Head] 
-J --> K[Log Price Prediction]
+    I --> J[MLP Regression Head]
+    J --> K[Log Price Prediction]
+```
 
 
 
