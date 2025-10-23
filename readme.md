@@ -55,7 +55,7 @@ graph LR
     D[Image Input] --> E[ViT Encoder];
     E --> F[Image Embedding];
 
-    G[IPQ Input] --> H[IPQ Feature (Scalar)];
+    G[IPQ Input] --> H[IPQ Feature - Scalar];
 
     C --> I[Concatenation];
     F --> I;
