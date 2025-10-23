@@ -49,25 +49,21 @@ The challenge requires predicting product price (`price`) using complex multimod
 
 ```mermaid
 graph LR
-    %% Text pipeline
     A[Text Input] --> B[DistilBERT Encoder]
     B --> C[Text Embedding]
 
-    %% Image pipeline
     D[Image Input] --> E[ViT Encoder]
     E --> F[Image Embedding]
 
-    %% IPQ pipeline
     G[IPQ Input] --> H[IPQ Feature (Scalar)]
 
-    %% Concatenation
     C --> I[Concatenation]
     F --> I
     H --> I
 
-    %% Regression Head
     I --> J[MLP Regression Head]
     J --> K[Log Price Prediction]
+
 ```
 
 
