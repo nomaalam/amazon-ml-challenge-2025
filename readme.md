@@ -56,6 +56,7 @@ F --> I
 H --> I
 I --> J[MLP Regression Head] --> K[Log Price Prediction]
 
+```
 
 ### 3.2 Model Components
 
